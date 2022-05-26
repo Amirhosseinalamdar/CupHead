@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.MainMenuController"
+            prefHeight="900.0" prefWidth="1600.0">
+
+    <center>
+        <Text text="mainMenu"/>
+
+
+        <VBox spacing="100" alignment="CENTER">
+            <Text text="Cup Head" style="-fx-font-size: 80"/>
+            <HBox spacing="100" alignment="CENTER">
+                <Button text="new game" prefWidth="200" prefHeight="60" onMouseClicked="#startNewGame"/>
+                <Button text="continue game" prefWidth="200" prefHeight="60"/>
+                <Button text="profile" prefWidth="200" prefHeight="60" onMouseClicked="#enterProfileMenu"/>
+            </HBox>
+            <HBox spacing="120" alignment="CENTER">
+                <Button text="setting" prefWidth="180" prefHeight="48" onMouseClicked="#enterSetting"/>
+                <Button text="rankings" prefWidth="180" prefHeight="48" onMouseClicked="#enterRankings"/>
+
+            </HBox>
+        </VBox>
+
+    </center>
+    <bottom>
+        <HBox alignment="BOTTOM_LEFT" style="-fx-padding: 5;">
+        <Button text="exit" prefHeight="50" prefWidth="100" onMouseClicked="#exit"/>
+        </HBox>
+    </bottom>
+</BorderPane>
